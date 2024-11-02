@@ -1,5 +1,6 @@
 name: First workflow
 on: workflow_dispatch
+#events need dispatch manually 
 jobs: 
   First_job:
     runs-on: ubuntu-latest
