@@ -1,5 +1,8 @@
 name: second workflow
-on: push
+on:
+  push:
+    paths-ignore:
+      - .github/**
 jobs:
   tests:
     runs-on: ubuntu-latest
