@@ -1,5 +1,9 @@
 name: Third workflow
-on: [push,workflow_dispatch]
+on: 
+  push:
+    paths-ignore:
+      - .github/**
+  workflow_dispatch:
 jobs:
   tests:
     runs-on: ubuntu-latest
