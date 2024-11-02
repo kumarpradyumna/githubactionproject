@@ -1,7 +1,5 @@
 name: second workflow
-on: [push]
-      paths-ignore:
-        - ".github"
+on: push
 jobs:
   tests:
     runs-on: ubuntu-latest
